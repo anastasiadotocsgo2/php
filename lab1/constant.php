@@ -1,0 +1,35 @@
+<?php
+/*
+ЗАДАНИЕ 1
+- Создайте константу и присвойте ей значение.
+*/
+define('MY_CONST', 'Прикладная математика и информатика');
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Константы</title>
+</head>
+<body>
+	<h1>Константы</h1>
+	<?php
+	/*
+	ЗАДАНИЕ 2
+	*/
+	if (defined('MY_CONST')) {
+		echo 'Константа MY_CONST существует. Значение: ' . MY_CONST . '<br>';
+	} else {
+		echo 'Константа MY_CONST не определена<br>';
+	}
+	
+	/*
+	ЗАДАНИЕ 3
+	*/
+	echo 'Версия PHP: ' . PHP_VERSION . '<br>';
+	echo 'Директория скрипта: ' . __DIR__ . '<br>';
+	?>
+</body>
+</html>
